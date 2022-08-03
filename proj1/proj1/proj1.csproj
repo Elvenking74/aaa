@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6A4EE0FB-590A-407E-A8B6-44B08F0989FE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>proj1</RootNamespace>
+    <AssemblyName>proj1</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FAdministracija.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FAdministracija.Designer.cs">
+      <DependentUpon>FAdministracija.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FAdministrator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FAdministrator.Designer.cs">
+      <DependentUpon>FAdministrator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FAFilm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FAFilm.Designer.cs">
+      <DependentUpon>FAFilm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FAKat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FAKat.Designer.cs">
+      <DependentUpon>FAKat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FAKupac.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FAKupac.Designer.cs">
+      <DependentUpon>FAKupac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FAProjekcija.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FAProjekcija.Designer.cs">
+      <DependentUpon>FAProjekcija.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FARezervacija.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FARezervacija.Designer.cs">
+      <DependentUpon>FARezervacija.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FASala.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FASala.Designer.cs">
+      <DependentUpon>FASala.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FKPocetna.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FKPocetna.Designer.cs">
+      <DependentUpon>FKPocetna.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FKRezervacija.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FKRezervacija.Designer.cs">
+      <DependentUpon>FKRezervacija.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FKRUpdt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FKRUpdt.Designer.cs">
+      <DependentUpon>FKRUpdt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FKUlog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FKUlog.Designer.cs">
+      <DependentUpon>FKUlog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FProvera.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FProvera.Designer.cs">
+      <DependentUpon>FProvera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FKupac.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FKupac.Designer.cs">
+      <DependentUpon>FKupac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KFilm.cs" />
+    <Compile Include="KKorisnik.cs" />
+    <Compile Include="KKupac.cs" />
+    <Compile Include="KProjekcija.cs" />
+    <Compile Include="KRezervacija.cs" />
+    <Compile Include="KSala.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FAdministracija.resx">
+      <DependentUpon>FAdministracija.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FAdministrator.resx">
+      <DependentUpon>FAdministrator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FAFilm.resx">
+      <DependentUpon>FAFilm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FAKat.resx">
+      <DependentUpon>FAKat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FAKupac.resx">
+      <DependentUpon>FAKupac.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FAProjekcija.resx">
+      <DependentUpon>FAProjekcija.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FARezervacija.resx">
+      <DependentUpon>FARezervacija.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FASala.resx">
+      <DependentUpon>FASala.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FKPocetna.resx">
+      <DependentUpon>FKPocetna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FKRezervacija.resx">
+      <DependentUpon>FKRezervacija.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FKRUpdt.resx">
+      <DependentUpon>FKRUpdt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FKUlog.resx">
+      <DependentUpon>FKUlog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FKupac.resx">
+      <DependentUpon>FKupac.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FProvera.resx">
+      <DependentUpon>FProvera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
